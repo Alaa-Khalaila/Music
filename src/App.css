@@ -24,6 +24,12 @@
   width: 140px;
 }
 
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .nav ul {
   display: flex;
   list-style: none;
@@ -39,7 +45,7 @@
   font-size: 16px;
 }
 
-.nav a:hover{
+.nav a:hover {
   color: #ffffff;
 }
 
@@ -74,4 +80,49 @@
   font-size: 50px;
   color: #ffffff;
   cursor: pointer;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .audio {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+ .nav{
+   display: none;
+ }
+  .container {
+    width: 96%;
+  }
+
+  .bg {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+  }
+  .left-side h1 {
+    font-size: 70px;
+    position: absolute;
+    top: 370px;
+  }
+  .audio h3 {
+    display: none;
+  }
+  .audio i {
+    position: fixed;
+    right: 10px;
+    font-size: 120px;
+    color: #ffffff;
+    bottom: 30px;
+  }
+  .logo img {
+    width: 70px;
+  }
 }
